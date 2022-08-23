@@ -1,0 +1,9 @@
+FROM puppeth/blockscout:latest
+
+WORKDIR /opt/app
+
+ADD start_explorer.sh .
+RUN chmod +x start_explorer.sh 
+CMD ./start_explorer.sh
+
+# CMD bash
